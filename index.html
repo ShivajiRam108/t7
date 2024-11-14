@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Flex Wrap Behavior </title>
+</head>
+<body>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            border: 1px solid black;
+            gap: 5px;
+            padding: 10px;
+        }
+        .flex-container>div{
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .flex-child-1{
+            background-color: #33b5ff;
+            width: 100px;
+        }
+        .flex-child-2{
+            background-color: #33ff88;
+            width: 150px;
+        }
+        .flex-child-3{
+            background-color: #a033ff;
+            width: 200px;
+        }
+        .flex-child-4{
+            background-color: #ff33cc;
+            width: 250px;
+        }
+        .flex-child-5{
+            background-color: #ff5733;
+            width: 300px;
+        }
+        .flex-child-6{
+            background-color: #ffaa33;
+            width: 350px;
+        }
+        
+    </style>
+
+    <div class="flex-container">
+        <div class="flex-child-1">Child 1</div>
+        <div class="flex-child-2">Child 2</div>
+        <div class="flex-child-3">Child 3</div>
+        <div class="flex-child-4">Child 4</div>
+        <div class="flex-child-5">Child 5</div>
+        <div class="flex-child-6">Child 6</div>
+      </div>
+</body>
+</html>
+<!-- 
+Objective: Explore how flex items wrap onto multiple lines when space is constrained. 
+- Create a div container with six child div elements. 
+- Set the container’s width to a fixed value and apply flex-wrap to allow children to wrap onto new lines when there’s not enough space.
+ - Experiment with different child widths to see how they rearrange when the container size is smaller. -->
